@@ -4,7 +4,7 @@
 <!ELEMENT book (title, publisher, price, ISBN)>
 <!ATTLIST book year CDATA>
 <!ELEMENT title (#PCDATA)>
-<!ENTITY publisher (abbreviation, name, country)>
+<!ELEMENT publisher (abbreviation, name, country)>
 <!ELEMENT abbreviation (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT country (#PCDATA)>
