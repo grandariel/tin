@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!ELEMENT article (date, title, email, para, source)>
-
+<!ELEMENT article (date, title, email, para+, source)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
-<!ELEMENT para (place, company, link)>
+<!ELEMENT para (place*, company*, link*, #PCDATA)>
 <!ELEMENT source (#PCDATA)>
 <!ELEMENT place (#PCDATA)>
 <!ELEMENT company (#PCDATA)>
 <!ELEMENT link (#PCDATA)>
-<!ATTLIST link ref CDATA>
+<!ATTLIST link
+        ref CDATA>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT catalogue (book, publisher)>
+<!ELEMENT book (title, price, ISBN)>
+<!ATTLIST book
+        year CDATA
+        publisher IDREF>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publisher (name, country)>
+<!ATTLIST publisher
+        abbreviation ID>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price kind (retail|wholesale)>
+<!ELEMENT ISBN (#PCDATA)>
