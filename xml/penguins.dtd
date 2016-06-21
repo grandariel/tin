@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!ELEMENT article (date, title, email, para+, source)>
+<!ELEMENT article (date, title, email, para+, source?)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
